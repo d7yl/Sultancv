@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>إنجازاتي</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- إضافة مكتبة AOS لتحريك العناصر -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">الرئيسية</a></li>
+                <li><a href="#achievements">إنجازاتي</a></li>
+                <li><a href="#cv">السيرة الذاتية</a></li>
+                <li><a href="#contact">التواصل</a></li>
+            </ul>
+        </nav>
+        <div class="hero" data-aos="fade-up">
+            <h1>مرحبًا بك في موقعي</h1>
+            <p>اكتشف إنجازاتي وشاهد سيرتي الذاتية</p>
+            <a href="#achievements" class="btn">استكشاف</a>
+        </div>
+    </header>
+
+    <section id="achievements">
+        <h2 data-aos="fade-up">إنجازاتي</h2>
+        <div class="achievement-gallery">
+            <div class="achievement-item" data-aos="fade-right">
+                <img src="project1.jpg" alt="Image 1 - تطبيق للأخبار والوظائف">
+                <h3>تطبيق للأخبار والوظائف</h3>
+                <p>تطبيق يجمع ما بين الأخبار الاقتصادية والعلاقات و الوظائف</p>
+            </div>
+            <div class="achievement-item" data-aos="fade-up">
+                <img src="project2.jpg" alt="Image 2 - تطبيق القرآن الكريم">
+                <h3>تطبيق القرآن الكريم</h3>
+                <p>تطبيق يساعد الكبار على قراءة صفحات القرآن من الهاتف بشكل ممتاز</p>
+            </div>
+            <div class="achievement-item" data-aos="fade-left">
+                <img src="project3.jpg" alt="Image 3 - الهكر الأخلاقي">
+                <h3>الهكر الأخلاقي</h3>
+                <p>أقوم بحماية الأجهزة عن طريق تقنيات خاصة بي</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="cv" data-aos="fade-up">
+        <h2>السيرة الذاتية</h2>
+        <div class="cv-content">
+            <p>هنا يمكنك مشاهدة سيرتي الذاتية بشكل كامل</p>
+            <a href="assets/cv.pdf" class="btn-download" download>تحميل السيرة الذاتية</a>
+        </div>
+    </section>
+    
+    <section id="contact" data-aos="fade-up">
+        <div id="form-container">
+            <h2>تواصل معي</h2>
+            <form id="contact-form">
+                <label for="name">الاسم:</label>
+                <input type="text" id="name" name="name" required>
+    
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="message">رسالتك:</label>
+                <textarea id="message" name="message" required></textarea>
+    
+                <button type="submit">إرسال</button>
+            </form>
+            <div id="confirmation-message"></div> <!-- إضافة عنصر لرسائل التأكيد -->
+        </div>
+    </section>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © 2024 | <a href="https://www.linkedin.com/in/sultan-thubaity-052b0b32a/" target="_blank">صفحتي على LinkedIn</a></p>
+        <div id="copyright">
+            <p>هذا الموقع تم تطويره بعناية واحترافية من قبل <br>م.سلطان الثبيتي</p>
+        </div>
+    </footer>
+    
+    <!-- إضافة مكتبة AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // مدة الحركات (1.2 ثانية)
+            once: true, // تشغيل الحركة مرة واحدة فقط
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>
